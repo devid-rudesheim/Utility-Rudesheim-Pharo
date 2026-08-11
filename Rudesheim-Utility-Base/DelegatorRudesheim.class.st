@@ -1,18 +1,10 @@
 Class {
 	#name : 'DelegatorRudesheim',
 	#superclass : 'ProtoObject',
-	#category : 'Rudesheim-Utility-Delegator',
-	#package : 'Rudesheim-Utility',
+	#category : 'Rudesheim-Utility-Base',
+	#package : 'Rudesheim-Utility-Base',
 	#tag : 'Delegator'
 }
-
-{ #category : 'namespace' }
-DelegatorRudesheim class >> Basic [ ^ BasicDelegatorRudesheim
-]
-
-{ #category : 'namespace' }
-DelegatorRudesheim class >> ForAccessing [ ^ DelegatorForAccessingRudesheim
-]
 
 { #category : 'instance creation' }
 DelegatorRudesheim class >> new [

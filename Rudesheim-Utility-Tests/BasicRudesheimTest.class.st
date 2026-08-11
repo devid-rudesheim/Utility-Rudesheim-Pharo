@@ -11,6 +11,12 @@ Class {
 }
 
 { #category : 'accessing' }
+BasicRudesheimTest class >> isAbstract [
+
+	^ self = BasicRudesheimTest
+]
+
+{ #category : 'accessing' }
 BasicRudesheimTest class >> targetClass [
 
 	^ self subclassResponsibility.

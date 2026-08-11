@@ -1,7 +1,7 @@
 Trait {
 	#name : 'TShouldntNewRudesheim',
-	#category : 'Rudesheim-Utility',
-	#package : 'Rudesheim-Utility'
+	#category : 'Rudesheim-Utility-Base',
+	#package : 'Rudesheim-Utility-Base'
 }
 
 { #category : 'instance creation' }

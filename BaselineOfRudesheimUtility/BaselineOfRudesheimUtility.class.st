@@ -14,20 +14,27 @@ BaselineOfRudesheimUtility >> baseline: spec [
 		do:
 		[
 			spec
-				package: 'Rudesheim-Utility-Private';
+				package: 'Rudesheim-Utility-Base';
+
+				package: 'Rudesheim-Utility-Private'
+				with:
+				[
+					spec
+						requires: #( 'Rudesheim-Utility-Base' )
+				];
 
 				package: 'Rudesheim-Utility'
 				with:
 				[
 					spec
-						requires: #( 'Rudesheim-Utility-Private' )
+						requires: #( 'Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' )
 				];
 
 				package: 'Rudesheim-Utility-Private-Tests'
 				with:
 				[
 					spec
-						requires: #( 'Rudesheim-Utility' )
+						requires: #( 'Rudesheim-Utility' 'Rudesheim-Utility-Tests' )
 				];
 
 				package: 'Rudesheim-Utility-Tests'
@@ -38,10 +45,10 @@ BaselineOfRudesheimUtility >> baseline: spec [
 				];
 
 				group:		#core
-				with:		#( 'Rudesheim-Utility-Private' 'Rudesheim-Utility' );
+				with:		#( 'Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' 'Rudesheim-Utility' );
 
 				group:		#tests
-				with:		#( 'Rudesheim-Utility-Private-Tests' 'Rudesheim-Utility-Tests' );
+				with:		#( 'Rudesheim-Utility-Tests' 'Rudesheim-Utility-Private-Tests' );
 
 				group:		#default
 				with:		#( #core ).

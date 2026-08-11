@@ -4,8 +4,8 @@ Class {
 	#instVars : [
 		'variableName'
 	],
-	#category : 'Rudesheim-Utility',
-	#package : 'Rudesheim-Utility'
+	#category : 'Rudesheim-Utility-Base',
+	#package : 'Rudesheim-Utility-Base'
 }
 
 { #category : 'signalling' }

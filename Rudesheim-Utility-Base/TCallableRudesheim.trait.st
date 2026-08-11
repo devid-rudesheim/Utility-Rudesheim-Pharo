@@ -3,8 +3,8 @@ A TCallableRudesheim gives a class a block-compatible calling interface (#value:
 "
 Trait {
 	#name : 'TCallableRudesheim',
-	#category : 'Rudesheim-Utility',
-	#package : 'Rudesheim-Utility'
+	#category : 'Rudesheim-Utility-Base',
+	#package : 'Rudesheim-Utility-Base'
 }
 
 { #category : 'evaluating' }

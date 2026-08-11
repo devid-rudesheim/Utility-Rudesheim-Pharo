@@ -9,6 +9,12 @@ Class {
 	#tag : 'Delegator'
 }
 
+{ #category : 'accessing' }
+DelegatorRudesheimTest class >> isAbstract [
+
+	^ self = DelegatorRudesheimTest
+]
+
 { #category : 'tests' }
 DelegatorRudesheimTest >> testDelegate [
 
