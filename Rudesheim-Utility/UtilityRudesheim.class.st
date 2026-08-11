@@ -7,13 +7,16 @@ Class {
 }
 
 { #category : 'namespace' }
-UtilityRudesheim class >> Delegator [ ^ DelegatorRudesheim
+UtilityRudesheim class >> Delegator [
+	^ DelegatorRudesheim.
 ]
 
 { #category : 'namespace' }
-UtilityRudesheim class >> ShouldNotNil [ ^ ShouldNotNilRudesheim
+UtilityRudesheim class >> ShouldNotNil [
+	^ ShouldNotNilRudesheim.
 ]
 
 { #category : 'namespace' }
-UtilityRudesheim class >> SyntaxErrorNotification [ ^ SyntaxErrorNotificationRudesheim
+UtilityRudesheim class >> SyntaxErrorNotification [
+	^ SyntaxErrorNotificationRudesheim.
 ]

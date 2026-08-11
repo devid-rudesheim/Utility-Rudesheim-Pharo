@@ -11,25 +11,22 @@ Class {
 }
 
 { #category : 'instance creation' }
-DelegatorForAccessingRudesheim class >> targetFrom:	aSelector
-of:				anObject [
-
+DelegatorForAccessingRudesheim class >> targetFrom: aSelector
+of: anObject [
 	^ self basicNew
 		setTargetFrom:	aSelector
-		of:					anObject.
+		of:	anObject.
 ]
 
 { #category : 'options' }
 DelegatorForAccessingRudesheim >> delegate [
-
 	^ target
-		perform: selector.
+		perform:	selector.
 ]
 
 { #category : 'initialization' }
-DelegatorForAccessingRudesheim >> setTargetFrom:	aSelector
-of:					anObject [
-
-	target		:= anObject.
-	selector	:= aSelector.
+DelegatorForAccessingRudesheim >> setTargetFrom: aSelector
+of: anObject [
+	target := anObject.
+	selector := aSelector.
 ]

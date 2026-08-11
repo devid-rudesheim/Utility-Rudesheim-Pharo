@@ -10,48 +10,43 @@ Class {
 
 { #category : 'accessing' }
 ShouldNotNilRudesheimTest class >> targetClass [
-
 	^ ShouldNotNilRudesheim.
 ]
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> runAssertNotNilWithName0 [
-
 	self
 		should:
 		[
 			self targetClass
 				assertNotNil:	nil
-				withName:		'value'
+				withName:	'value'.
 		]
 		raise:	self targetClass.
 ]
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> runAssertNotNilWithName1 [
-	
 	[
 		self targetClass
 			assertNotNil:	nil
-			withName:		self expectedValue
+			withName:	self expectedValue.
 	]
 		on:	self targetClass
 		do:
 		[ :exception |
-		
 			self
 				assert:	self expectedValue
 				equals:	exception messageText.
-			
+
 			^ self.
 		].
-	
+
 	self fail.
 ]
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> testAssertNotNilWithName [
-
 	self
 		testAssertNotNilWithName0_0;
 		tearDown;
@@ -64,13 +59,11 @@ ShouldNotNilRudesheimTest >> testAssertNotNilWithName [
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> testAssertNotNilWithName0_0 [
-
 	self runAssertNotNilWithName0.
 ]
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> testAssertNotNilWithName1_0 [
-
 	self
 		expectedValue:	'one';
 		runAssertNotNilWithName1.
@@ -78,7 +71,6 @@ ShouldNotNilRudesheimTest >> testAssertNotNilWithName1_0 [
 
 { #category : 'tests' }
 ShouldNotNilRudesheimTest >> testAssertNotNilWithName1_1 [
-
 	self
 		expectedValue:	'two';
 		runAssertNotNilWithName1.

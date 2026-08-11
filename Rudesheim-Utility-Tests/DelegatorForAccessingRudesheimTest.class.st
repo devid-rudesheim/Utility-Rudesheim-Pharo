@@ -11,26 +11,22 @@ Class {
 
 { #category : 'accessing' }
 DelegatorForAccessingRudesheimTest class >> targetClass [
-
 	^ DelegatorForAccessingRudesheim.
 ]
 
 { #category : 'accessing' }
 DelegatorForAccessingRudesheimTest >> defaultBasicTarget [
-
 	^ self targetClass
 		targetFrom:	#yourself
-		of:				1.
+		of:	1.
 ]
 
 { #category : 'tests' }
 DelegatorForAccessingRudesheimTest >> testBasicInstanceCreation [
-
 	super testBasicInstanceCreation.
 ]
 
 { #category : 'tests' }
 DelegatorForAccessingRudesheimTest >> testDelegate [
-
 	super testDelegate.
 ]
