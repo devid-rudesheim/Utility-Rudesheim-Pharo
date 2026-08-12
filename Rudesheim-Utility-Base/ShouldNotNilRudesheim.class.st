@@ -9,9 +9,8 @@ Class {
 }
 
 { #category : 'signalling' }
-ShouldNotNilRudesheim class >> assertNotNil:	anObject
-withName:		aVariableNameString [
-		
+ShouldNotNilRudesheim class >> assertNotNil: anObject
+withName: aVariableNameString [
 	anObject
 		ifNil:
 		[
@@ -21,49 +20,39 @@ withName:		aVariableNameString [
 ]
 
 { #category : 'signalling' }
-ShouldNotNilRudesheim class >> signalWithVariableName:	aString [
-
+ShouldNotNilRudesheim class >> signalWithVariableName: aString [
 	^ self basicNew
 		signalWithVariableName:	aString.
 ]
 
 { #category : 'accessing' }
 ShouldNotNilRudesheim >> defaultVariableName [
-
 	^ ''.
 ]
 
 { #category : 'signaling' }
 ShouldNotNilRudesheim >> signal [
-	
 	self shouldNotImplement.
-	
 ]
 
 { #category : 'signaling' }
-ShouldNotNilRudesheim >> signal:	aString [
-	
+ShouldNotNilRudesheim >> signal: aString [
 	self shouldNotImplement.
-	
 ]
 
 { #category : 'signaling' }
-ShouldNotNilRudesheim >> signalWithVariableName:	aVariableName [
-	
+ShouldNotNilRudesheim >> signalWithVariableName: aVariableName [
 	self
 		messageText:	aVariableName.
 
-	super
-		signal.
+	super signal.
 ]
 
 { #category : 'accessing' }
 ShouldNotNilRudesheim >> variableName [
-
 	^ variableName
 		ifNil:
 		[
 			variableName := self defaultVariableName.
 		].
-
 ]

@@ -23,78 +23,66 @@ withCode: aString
 doitFlag: aBoolean
 errorMessage: aMessageString
 location: anInteger [
-
 	^ self new
 		errorClass:	aClass;
 		errorCode:	aString;
 		doitFlag:	aBoolean;
 		errorMessage:	aMessageString;
 		location:	anInteger;
-		signal
+		signal.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> doitFlag [
-
-	^ doitFlag
+	^ doitFlag.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> doitFlag: aBoolean [
-
-	doitFlag := aBoolean
+	doitFlag := aBoolean.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorClass [
-
-	^ errorClass
+	^ errorClass.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorClass: aClass [
-
-	errorClass := aClass
+	errorClass := aClass.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorCode [
-
-	^ errorCode
+	^ errorCode.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorCode: aString [
-
-	errorCode := aString
+	errorCode := aString.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorMessage [
-
-	^ errorMessage
+	^ errorMessage.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> errorMessage: aString [
-
-	errorMessage := aString
+	errorMessage := aString.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> location [
-
-	^ location
+	^ location.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> location: anInteger [
-
-	location := anInteger
+	location := anInteger.
 ]
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheim >> messageText [
-
-	^ self errorMessage
+	^ self errorMessage.
 ]

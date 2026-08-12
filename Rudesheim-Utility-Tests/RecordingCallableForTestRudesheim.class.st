@@ -15,12 +15,10 @@ Class {
 
 { #category : 'accessing' }
 RecordingCallableForTestRudesheim >> lastArguments [
-
 	^ lastArguments.
 ]
 
 { #category : 'evaluating' }
 RecordingCallableForTestRudesheim >> valueWithArguments: aCollection [
-
 	lastArguments := aCollection.
 ]

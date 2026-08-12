@@ -10,19 +10,16 @@ Class {
 
 { #category : 'instance creation' }
 BasicDelegatorRudesheim class >> delegateTo: anObject [
-
 	^ self basicNew
-		delegate: anObject.
+		delegate:	anObject.
 ]
 
 { #category : 'options' }
 BasicDelegatorRudesheim >> delegate [
-
-	^ delegate
+	^ delegate.
 ]
 
 { #category : 'options' }
 BasicDelegatorRudesheim >> delegate: anObject [
-
-	delegate := anObject
+	delegate := anObject.
 ]
