@@ -7,6 +7,12 @@ Class {
 }
 
 { #category : 'namespace' }
+UtilityRudesheim class >> BlockScope [
+
+	^ BlockScopeUtilityRudesheim.
+]
+
+{ #category : 'namespace' }
 UtilityRudesheim class >> Delegator [
 	^ DelegatorRudesheim.
 ]
