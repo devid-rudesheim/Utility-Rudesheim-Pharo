@@ -1,6 +1,6 @@
 Class {
-	#name : 'BasicDelegatorRudesheim',
-	#superclass : 'DelegatorRudesheim',
+	#name : 'BasicDelegatorUtilityRudesheim',
+	#superclass : 'DelegatorUtilityRudesheim',
 	#instVars : [
 		'delegate'
 	],
@@ -9,17 +9,17 @@ Class {
 }
 
 { #category : 'instance creation' }
-BasicDelegatorRudesheim class >> delegateTo: anObject [
+BasicDelegatorUtilityRudesheim class >> delegateTo: anObject [
 	^ self basicNew
 		delegate:	anObject.
 ]
 
 { #category : 'options' }
-BasicDelegatorRudesheim >> delegate [
+BasicDelegatorUtilityRudesheim >> delegate [
 	^ delegate.
 ]
 
 { #category : 'options' }
-BasicDelegatorRudesheim >> delegate: anObject [
+BasicDelegatorUtilityRudesheim >> delegate: anObject [
 	delegate := anObject.
 ]

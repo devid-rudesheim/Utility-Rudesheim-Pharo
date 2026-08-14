@@ -63,3 +63,10 @@ DelegatorRudesheimTest >> testDelegate3 [
 		assert:	1 + self basicTarget
 		equals:	2.
 ]
+
+{ #category : 'tests' }
+DelegatorRudesheimTest >> testPeekDelegateRudesheim [
+	self
+		assert:	self basicTarget peekDelegateRudesheim
+		equals:	self basicTarget delegate.
+]

@@ -2,7 +2,7 @@
 A RHDelegationForAccessingTest is a test class for testing the behavior of RHDelegationForAccessing
 "
 Class {
-	#name : 'DelegatorForAccessingRudesheimTest',
+	#name : 'ForAccessingDelegatorRudesheimTest',
 	#superclass : 'DelegatorRudesheimTest',
 	#category : 'Rudesheim-Utility-Tests-Delegator',
 	#package : 'Rudesheim-Utility-Tests',
@@ -10,23 +10,23 @@ Class {
 }
 
 { #category : 'accessing' }
-DelegatorForAccessingRudesheimTest class >> targetClass [
-	^ DelegatorForAccessingRudesheim.
+ForAccessingDelegatorRudesheimTest class >> targetClass [
+	^ ForAccessingDelegatorUtilityRudesheim.
 ]
 
 { #category : 'accessing' }
-DelegatorForAccessingRudesheimTest >> defaultBasicTarget [
+ForAccessingDelegatorRudesheimTest >> defaultBasicTarget [
 	^ self targetClass
 		targetFrom:	#yourself
 		of:	1.
 ]
 
 { #category : 'tests' }
-DelegatorForAccessingRudesheimTest >> testBasicInstanceCreation [
+ForAccessingDelegatorRudesheimTest >> testBasicInstanceCreation [
 	super testBasicInstanceCreation.
 ]
 
 { #category : 'tests' }
-DelegatorForAccessingRudesheimTest >> testDelegate [
+ForAccessingDelegatorRudesheimTest >> testDelegate [
 	super testDelegate.
 ]

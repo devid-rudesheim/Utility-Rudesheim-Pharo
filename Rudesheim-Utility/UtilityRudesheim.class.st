@@ -14,7 +14,7 @@ UtilityRudesheim class >> BlockScope [
 
 { #category : 'namespace' }
 UtilityRudesheim class >> Delegator [
-	^ DelegatorRudesheim.
+	^ DelegatorUtilityRudesheim.
 ]
 
 { #category : 'namespace' }
