@@ -1,5 +1,5 @@
 Class {
-	#name : 'DelegatorRudesheim',
+	#name : 'DelegatorUtilityRudesheim',
 	#superclass : 'ProtoObject',
 	#category : 'Rudesheim-Utility-Base-Delegator',
 	#package : 'Rudesheim-Utility-Base',
@@ -7,27 +7,27 @@ Class {
 }
 
 { #category : 'instance creation' }
-DelegatorRudesheim class >> new [
+DelegatorUtilityRudesheim class >> new [
 	self shouldNotImplement.
 ]
 
 { #category : 'instance creation' }
-DelegatorRudesheim class >> new: anInteger [
+DelegatorUtilityRudesheim class >> new: anInteger [
 	self shouldNotImplement.
 ]
 
 { #category : 'options' }
-DelegatorRudesheim >> delegate [
+DelegatorUtilityRudesheim >> delegate [
 	self subclassResponsibility.
 ]
 
 { #category : 'options' }
-DelegatorRudesheim >> doesNotUnderstand: aMessage [
+DelegatorUtilityRudesheim >> doesNotUnderstand: aMessage [
 	^ aMessage
 		sendTo:	self delegate.
 ]
 
 { #category : 'options' }
-DelegatorRudesheim >> peekDelegateRudesheim [
+DelegatorUtilityRudesheim >> peekDelegateRudesheim [
 	^ self delegate.
 ]

@@ -2,7 +2,7 @@
 Test-support double: a #processMessage: implementation that records the last message it was asked to process and returns a canned value.
 "
 Class {
-	#name : 'CannedDelegateForTestRudesheim',
+	#name : 'CannedDelegateForTestUtilityRudesheim',
 	#superclass : 'Object',
 	#instVars : [
 		'lastMessage',
@@ -14,23 +14,23 @@ Class {
 }
 
 { #category : 'instance creation' }
-CannedDelegateForTestRudesheim class >> returning: anObject [
+CannedDelegateForTestUtilityRudesheim class >> returning: anObject [
 	^ self new
 		setCannedValue:	anObject.
 ]
 
 { #category : 'accessing' }
-CannedDelegateForTestRudesheim >> lastMessage [
+CannedDelegateForTestUtilityRudesheim >> lastMessage [
 	^ lastMessage.
 ]
 
 { #category : 'evaluating' }
-CannedDelegateForTestRudesheim >> processMessage: aMessage [
+CannedDelegateForTestUtilityRudesheim >> processMessage: aMessage [
 	lastMessage := aMessage.
 	^ cannedValue.
 ]
 
 { #category : 'initialization' }
-CannedDelegateForTestRudesheim >> setCannedValue: anObject [
+CannedDelegateForTestUtilityRudesheim >> setCannedValue: anObject [
 	cannedValue := anObject.
 ]

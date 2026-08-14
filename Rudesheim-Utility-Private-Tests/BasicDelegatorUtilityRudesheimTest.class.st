@@ -2,7 +2,7 @@
 A RHBasicDelegatorTest is a test class for testing the behavior of RHBasicDelegator
 "
 Class {
-	#name : 'BasicDelegatorRudesheimTest',
+	#name : 'BasicDelegatorUtilityRudesheimTest',
 	#superclass : 'DelegatorRudesheimTest',
 	#category : 'Rudesheim-Utility-Private-Tests-Delegator',
 	#package : 'Rudesheim-Utility-Private-Tests',
@@ -10,22 +10,22 @@ Class {
 }
 
 { #category : 'accessing' }
-BasicDelegatorRudesheimTest class >> targetClass [
-	^ BasicDelegatorRudesheim.
+BasicDelegatorUtilityRudesheimTest class >> targetClass [
+	^ BasicDelegatorUtilityRudesheim.
 ]
 
 { #category : 'accessing' }
-BasicDelegatorRudesheimTest >> defaultBasicTarget [
+BasicDelegatorUtilityRudesheimTest >> defaultBasicTarget [
 	^ self targetClass
 		delegateTo:	1.
 ]
 
 { #category : 'tests' }
-BasicDelegatorRudesheimTest >> testBasicInstanceCreation [
+BasicDelegatorUtilityRudesheimTest >> testBasicInstanceCreation [
 	super testBasicInstanceCreation.
 ]
 
 { #category : 'tests' }
-BasicDelegatorRudesheimTest >> testDelegate [
+BasicDelegatorUtilityRudesheimTest >> testDelegate [
 	super testDelegate.
 ]

@@ -1,5 +1,5 @@
 Class {
-	#name : 'MessageForwardingDelegatorRudesheimTest',
+	#name : 'MessageForwardingDelegatorUtilityRudesheimTest',
 	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-Utility-Private-Tests-Delegator',
 	#package : 'Rudesheim-Utility-Private-Tests',
@@ -7,31 +7,31 @@ Class {
 }
 
 { #category : 'accessing' }
-MessageForwardingDelegatorRudesheimTest class >> targetClass [
-	^ MessageForwardingDelegatorRudesheim.
+MessageForwardingDelegatorUtilityRudesheimTest class >> targetClass [
+	^ MessageForwardingDelegatorUtilityRudesheim.
 ]
 
 { #category : 'accessing' }
-MessageForwardingDelegatorRudesheimTest >> defaultBasicTarget [
+MessageForwardingDelegatorUtilityRudesheimTest >> defaultBasicTarget [
 	^ self targetClass
 		delegateTo:	self sourceValue.
 ]
 
 { #category : 'accessing' }
-MessageForwardingDelegatorRudesheimTest >> defaultSourceValue [
-	^ CannedDelegateForTestRudesheim
+MessageForwardingDelegatorUtilityRudesheimTest >> defaultSourceValue [
+	^ CannedDelegateForTestUtilityRudesheim
 		returning:	42.
 ]
 
 { #category : 'tests' }
-MessageForwardingDelegatorRudesheimTest >> testDelegate [
+MessageForwardingDelegatorUtilityRudesheimTest >> testDelegate [
 	self
 		assert:	self basicTarget delegate
 		equals:	self sourceValue.
 ]
 
 { #category : 'tests' }
-MessageForwardingDelegatorRudesheimTest >> testDoesNotUnderstandForwardsProcessMessageToDelegate [
+MessageForwardingDelegatorUtilityRudesheimTest >> testDoesNotUnderstandForwardsProcessMessageToDelegate [
 	self
 		assert:
 		(
@@ -51,7 +51,7 @@ MessageForwardingDelegatorRudesheimTest >> testDoesNotUnderstandForwardsProcessM
 ]
 
 { #category : 'tests' }
-MessageForwardingDelegatorRudesheimTest >> testForwardedResultRudesheimDefaultsToIdentity [
+MessageForwardingDelegatorUtilityRudesheimTest >> testForwardedResultRudesheimDefaultsToIdentity [
 	self
 		assert:
 		(
@@ -62,7 +62,7 @@ MessageForwardingDelegatorRudesheimTest >> testForwardedResultRudesheimDefaultsT
 ]
 
 { #category : 'tests' }
-MessageForwardingDelegatorRudesheimTest >> testPeekDelegateRudesheim [
+MessageForwardingDelegatorUtilityRudesheimTest >> testPeekDelegateRudesheim [
 	self
 		assert:	self basicTarget peekDelegateRudesheim
 		equals:	self sourceValue.
