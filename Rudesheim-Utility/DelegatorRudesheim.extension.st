@@ -9,3 +9,8 @@ DelegatorRudesheim class >> Basic [
 DelegatorRudesheim class >> ForAccessing [
 	^ DelegatorForAccessingRudesheim.
 ]
+
+{ #category : '*Rudesheim-Utility' }
+DelegatorRudesheim class >> ForProcessingMessage [
+	^ MessageForwardingDelegatorRudesheim.
+]

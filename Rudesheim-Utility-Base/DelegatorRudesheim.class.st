@@ -26,3 +26,8 @@ DelegatorRudesheim >> doesNotUnderstand: aMessage [
 	^ aMessage
 		sendTo:	self delegate.
 ]
+
+{ #category : 'options' }
+DelegatorRudesheim >> peekDelegateRudesheim [
+	^ self delegate.
+]
