@@ -20,19 +20,25 @@ TCallableUtilityRudesheim >> value: anObject [
 ]
 
 { #category : 'evaluating' }
-TCallableUtilityRudesheim >> value: anObject value: anotherObject [
+TCallableUtilityRudesheim >> value:	anObject
+value:	anotherObject [
 
 	^ self valueWithArguments: { anObject. anotherObject }.
 ]
 
 { #category : 'evaluating' }
-TCallableUtilityRudesheim >> value: anObject value: anotherObject value: aThirdObject [
+TCallableUtilityRudesheim >> value:	anObject
+value:	anotherObject
+value:	aThirdObject [
 
 	^ self valueWithArguments: { anObject. anotherObject. aThirdObject }.
 ]
 
 { #category : 'evaluating' }
-TCallableUtilityRudesheim >> value: anObject value: anotherObject value: aThirdObject value: aFourthObject [
+TCallableUtilityRudesheim >> value:	anObject
+value:	anotherObject
+value:	aThirdObject
+value:	aFourthObject [
 
 	^ self valueWithArguments: { anObject. anotherObject. aThirdObject. aFourthObject }.
 ]
