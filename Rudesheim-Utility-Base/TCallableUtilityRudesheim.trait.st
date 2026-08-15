@@ -10,20 +10,27 @@ Trait {
 { #category : 'evaluating' }
 TCallableUtilityRudesheim >> value [
 
-	^ self valueWithArguments: #().
+	^ self
+		valueWithArguments:	#().
 ]
 
 { #category : 'evaluating' }
 TCallableUtilityRudesheim >> value: anObject [
 
-	^ self valueWithArguments: { anObject }.
+	^ self
+		valueWithArguments:	{ anObject }.
 ]
 
 { #category : 'evaluating' }
 TCallableUtilityRudesheim >> value:	anObject
 value:	anotherObject [
 
-	^ self valueWithArguments: { anObject. anotherObject }.
+	^ self
+		valueWithArguments:
+		{
+			anObject.
+			anotherObject
+		}.
 ]
 
 { #category : 'evaluating' }
@@ -31,7 +38,13 @@ TCallableUtilityRudesheim >> value:	anObject
 value:	anotherObject
 value:	aThirdObject [
 
-	^ self valueWithArguments: { anObject. anotherObject. aThirdObject }.
+	^ self
+		valueWithArguments:
+		{
+			anObject.
+			anotherObject.
+			aThirdObject
+		}.
 ]
 
 { #category : 'evaluating' }
@@ -40,7 +53,14 @@ value:	anotherObject
 value:	aThirdObject
 value:	aFourthObject [
 
-	^ self valueWithArguments: { anObject. anotherObject. aThirdObject. aFourthObject }.
+	^ self
+		valueWithArguments:
+		{
+			anObject.
+			anotherObject.
+			aThirdObject.
+			aFourthObject
+		}.
 ]
 
 { #category : 'evaluating' }
