@@ -1,11 +1,11 @@
 "
-Test-support double: a TCallableRudesheim implementation that just records the arguments collection it was invoked with.
+Test-support double: a TCallableUtilityRudesheim implementation that just records the arguments collection it was invoked with.
 "
 Class {
 	#name : 'RecordingCallableForTestRudesheim',
 	#superclass : 'Object',
-	#traits : 'TCallableRudesheim',
-	#classTraits : 'TCallableRudesheim classTrait',
+	#traits : 'TCallableUtilityRudesheim',
+	#classTraits : 'TCallableUtilityRudesheim classTrait',
 	#instVars : [
 		'lastArguments'
 	],
