@@ -1,17 +1,17 @@
 Class {
-	#name : 'TCallableRudesheimTest',
+	#name : 'TCallableUtilityRudesheimTest',
 	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-Utility-Tests',
 	#package : 'Rudesheim-Utility-Tests'
 }
 
 { #category : 'accessing' }
-TCallableRudesheimTest class >> targetClass [
+TCallableUtilityRudesheimTest class >> targetClass [
 	^ RecordingCallableForTestRudesheim.
 ]
 
 { #category : 'tests' }
-TCallableRudesheimTest >> testValue [
+TCallableUtilityRudesheimTest >> testValue [
 	self
 		basicTarget
 		value.
@@ -25,7 +25,7 @@ TCallableRudesheimTest >> testValue [
 ]
 
 { #category : 'tests' }
-TCallableRudesheimTest >> testValue1 [
+TCallableUtilityRudesheimTest >> testValue1 [
 	self basicTarget
 		value:	1.
 
@@ -38,7 +38,7 @@ TCallableRudesheimTest >> testValue1 [
 ]
 
 { #category : 'tests' }
-TCallableRudesheimTest >> testValue2 [
+TCallableUtilityRudesheimTest >> testValue2 [
 	self basicTarget
 		value:	1
 		value:	2.
@@ -52,7 +52,7 @@ TCallableRudesheimTest >> testValue2 [
 ]
 
 { #category : 'tests' }
-TCallableRudesheimTest >> testValue3 [
+TCallableUtilityRudesheimTest >> testValue3 [
 	self basicTarget
 		value:	1
 		value:	2
@@ -67,7 +67,7 @@ TCallableRudesheimTest >> testValue3 [
 ]
 
 { #category : 'tests' }
-TCallableRudesheimTest >> testValue4 [
+TCallableUtilityRudesheimTest >> testValue4 [
 	self basicTarget
 		value:	1
 		value:	2

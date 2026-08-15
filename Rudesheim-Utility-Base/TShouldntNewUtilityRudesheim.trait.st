@@ -1,17 +1,17 @@
 Trait {
-	#name : 'TShouldntNewRudesheim',
+	#name : 'TShouldntNewUtilityRudesheim',
 	#category : 'Rudesheim-Utility-Base',
 	#package : 'Rudesheim-Utility-Base'
 }
 
 { #category : 'instance creation' }
-TShouldntNewRudesheim classSide >> new [
+TShouldntNewUtilityRudesheim classSide >> new [
 
 	^ self shouldNotImplement.
 ]
 
 { #category : 'instance creation' }
-TShouldntNewRudesheim classSide >> new: anIndex [
+TShouldntNewUtilityRudesheim classSide >> new: anIndex [
 
 	^ self shouldNotImplement.
 ]
