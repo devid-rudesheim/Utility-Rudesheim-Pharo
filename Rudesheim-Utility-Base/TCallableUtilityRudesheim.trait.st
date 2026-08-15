@@ -18,7 +18,10 @@ TCallableUtilityRudesheim >> value [
 TCallableUtilityRudesheim >> value: anObject [
 
 	^ self
-		valueWithArguments:	{ anObject }.
+		valueWithArguments:
+		{
+			anObject
+		}.
 ]
 
 { #category : 'evaluating' }
