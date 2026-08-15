@@ -1,8 +1,8 @@
 Class {
 	#name : 'ForStreamBlockScopeUtilityRudesheim',
 	#superclass : 'Object',
-	#traits : 'TShouldntNewRudesheim',
-	#classTraits : 'TShouldntNewRudesheim classTrait',
+	#traits : 'TShouldntNewUtilityRudesheim',
+	#classTraits : 'TShouldntNewUtilityRudesheim classTrait',
 	#instVars : [
 		'stream'
 	],
