@@ -1,20 +1,12 @@
 Class {
 	#name : 'DelegatorUtilityRudesheim',
 	#superclass : 'ProtoObject',
+	#traits : 'TShouldntNewRudesheim',
+	#classTraits : 'TShouldntNewRudesheim classTrait',
 	#category : 'Rudesheim-Utility-Base-Delegator',
 	#package : 'Rudesheim-Utility-Base',
 	#tag : 'Delegator'
 }
-
-{ #category : 'instance creation' }
-DelegatorUtilityRudesheim class >> new [
-	self shouldNotImplement.
-]
-
-{ #category : 'instance creation' }
-DelegatorUtilityRudesheim class >> new: anInteger [
-	self shouldNotImplement.
-]
 
 { #category : 'options' }
 DelegatorUtilityRudesheim >> delegate [
