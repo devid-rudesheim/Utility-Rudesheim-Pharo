@@ -19,7 +19,12 @@ BaselineOfRudesheimUtility >> baseline: spec [
 				[
 					spec repository: 'github://devid-rudesheim/Kernel-Rudesheim-Pharo:main'
 				];
-				package:	'Rudesheim-Utility-Base';
+				package:	'Rudesheim-Utility-Base'
+				with:
+				[
+					spec
+						requires:	#('RudesheimKernel').
+				];
 				package:	'Rudesheim-Utility-Private'
 				with:
 				[

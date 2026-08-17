@@ -4,6 +4,8 @@ Test-support double: a #processMessage: implementation that records the last mes
 Class {
 	#name : 'CannedDelegateForTestUtilityRudesheim',
 	#superclass : 'Object',
+	#traits : 'TShouldntNewRudesheim',
+	#classTraits : 'TShouldntNewRudesheim classTrait',
 	#instVars : [
 		'lastMessage',
 		'cannedValue'
@@ -15,7 +17,7 @@ Class {
 
 { #category : 'instance creation' }
 CannedDelegateForTestUtilityRudesheim class >> returning: anObject [
-	^ self new
+	^ super new
 		setCannedValue:	anObject.
 ]
 

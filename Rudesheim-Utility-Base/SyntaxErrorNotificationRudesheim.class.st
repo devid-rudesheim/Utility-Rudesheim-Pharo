@@ -6,6 +6,8 @@ provides SyntaxErrorNotification.
 Class {
 	#name : 'SyntaxErrorNotificationRudesheim',
 	#superclass : 'Error',
+	#traits : 'TShouldntNewRudesheim',
+	#classTraits : 'TShouldntNewRudesheim classTrait',
 	#instVars : [
 		'errorClass',
 		'errorCode',
@@ -23,7 +25,7 @@ withCode: aString
 doitFlag: aBoolean
 errorMessage: aMessageString
 location: anInteger [
-	^ self new
+	^ super new
 		errorClass:	aClass;
 		errorCode:	aString;
 		doitFlag:	aBoolean;
