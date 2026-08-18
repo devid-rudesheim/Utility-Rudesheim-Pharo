@@ -18,11 +18,6 @@ UtilityRudesheim class >> Delegator [
 ]
 
 { #category : 'namespace' }
-UtilityRudesheim class >> ShouldNotNil [
-	^ ShouldNotNilRudesheim.
-]
-
-{ #category : 'namespace' }
 UtilityRudesheim class >> SyntaxErrorNotification [
 	^ SyntaxErrorNotificationRudesheim.
 ]

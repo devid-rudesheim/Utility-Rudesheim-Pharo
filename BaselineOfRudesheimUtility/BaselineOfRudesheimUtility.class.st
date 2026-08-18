@@ -14,12 +14,22 @@ BaselineOfRudesheimUtility >> baseline: spec [
 		do:
 		[
 			spec
-				package:	'Rudesheim-Utility-Base';
+				baseline:	'RudesheimKernel'
+				with:
+				[
+					spec repository: 'github://devid-rudesheim/Kernel-Rudesheim-Pharo:main'
+				];
+				package:	'Rudesheim-Utility-Base'
+				with:
+				[
+					spec
+						requires:	#('RudesheimKernel').
+				];
 				package:	'Rudesheim-Utility-Private'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Utility-Base').
+						requires:	#('Rudesheim-Utility-Base' 'RudesheimKernel').
 				];
 				package:	'Rudesheim-Utility'
 				with:
