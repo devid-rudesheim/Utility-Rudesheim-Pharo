@@ -18,6 +18,11 @@ UtilityRudesheim class >> Delegator [
 ]
 
 { #category : 'namespace' }
+UtilityRudesheim class >> Extent [
+	^ ExtentUtilityRudesheim.
+]
+
+{ #category : 'namespace' }
 UtilityRudesheim class >> SyntaxErrorNotification [
 	^ SyntaxErrorNotificationRudesheim.
 ]
