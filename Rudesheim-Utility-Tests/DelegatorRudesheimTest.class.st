@@ -32,10 +32,8 @@ DelegatorRudesheimTest >> testDelegate [
 { #category : 'tests' }
 DelegatorRudesheimTest >> testDelegate0 [
 	self
-		assert:	
-		self
-			basicTarget
-			delegate
+		assert:
+			self basicTarget delegate
 		equals:	1.
 ]
 

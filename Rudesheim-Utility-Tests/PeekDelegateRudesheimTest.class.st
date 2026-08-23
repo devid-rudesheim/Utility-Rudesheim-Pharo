@@ -25,8 +25,5 @@ PeekDelegateRudesheimTest >> testStringAnswersItself [
 
 	self
 		assert:
-		(
-			aString peekDelegateRudesheim
-				== aString
-		).
+			aString peekDelegateRudesheim == aString.
 ]

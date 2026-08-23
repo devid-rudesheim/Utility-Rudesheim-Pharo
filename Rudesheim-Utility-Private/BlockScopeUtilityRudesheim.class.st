@@ -8,6 +8,5 @@ Class {
 
 { #category : 'namespace' }
 BlockScopeUtilityRudesheim class >> ForStream [
-
 	^ ForStreamBlockScopeUtilityRudesheim.
 ]
