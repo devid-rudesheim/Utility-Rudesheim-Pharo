@@ -11,7 +11,7 @@ Class {
 
 { #category : 'accessing' }
 ForAccessingDelegatorRudesheimTest class >> targetClass [
-	^ ForAccessingDelegatorUtilityRudesheim.
+	^ Rudesheim Utility Delegator ForAccessing.
 ]
 
 { #category : 'accessing' }

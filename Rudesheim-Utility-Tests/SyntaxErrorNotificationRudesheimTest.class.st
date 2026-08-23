@@ -7,7 +7,7 @@ Class {
 
 { #category : 'accessing' }
 SyntaxErrorNotificationRudesheimTest class >> targetClass [
-	^ SyntaxErrorNotificationRudesheim.
+	^ Rudesheim Utility SyntaxErrorNotification.
 ]
 
 { #category : 'tests' }
