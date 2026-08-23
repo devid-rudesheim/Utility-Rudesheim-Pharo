@@ -11,7 +11,7 @@ Class {
 
 { #category : 'accessing' }
 BasicDelegatorUtilityRudesheimTest class >> targetClass [
-	^ BasicDelegatorUtilityRudesheim.
+	^ Rudesheim Utility Delegator Basic.
 ]
 
 { #category : 'accessing' }

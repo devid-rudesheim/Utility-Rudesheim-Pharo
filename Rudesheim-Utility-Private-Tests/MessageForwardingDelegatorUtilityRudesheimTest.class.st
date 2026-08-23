@@ -8,7 +8,7 @@ Class {
 
 { #category : 'accessing' }
 MessageForwardingDelegatorUtilityRudesheimTest class >> targetClass [
-	^ MessageForwardingDelegatorUtilityRudesheim.
+	^ Rudesheim Utility Delegator ForProcessingMessage.
 ]
 
 { #category : 'accessing' }
