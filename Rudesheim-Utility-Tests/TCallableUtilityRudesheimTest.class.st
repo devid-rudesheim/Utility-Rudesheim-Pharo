@@ -12,16 +12,11 @@ TCallableUtilityRudesheimTest class >> targetClass [
 
 { #category : 'tests' }
 TCallableUtilityRudesheimTest >> testValue [
-	self
-		basicTarget
-		value.
+	self basicTarget value.
 
 	self
-		assert:	
-		self
-			basicTarget
-			lastArguments
-		equals:	#().
+		assert:	self basicTarget lastArguments
+		equals:	#(  ).
 ]
 
 { #category : 'tests' }
@@ -30,11 +25,11 @@ TCallableUtilityRudesheimTest >> testValue1 [
 		value:	1.
 
 	self
-		assert:	
-		self
-			basicTarget
-			lastArguments
-		equals:	{1}.
+		assert:	self basicTarget lastArguments
+		equals:
+		{
+			1
+		}.
 ]
 
 { #category : 'tests' }
@@ -44,11 +39,12 @@ TCallableUtilityRudesheimTest >> testValue2 [
 		value:	2.
 
 	self
-		assert:	
-		self
-			basicTarget
-			lastArguments
-		equals:	{1 .  2}.
+		assert:	self basicTarget lastArguments
+		equals:
+		{
+			1.
+			2
+		}.
 ]
 
 { #category : 'tests' }
@@ -59,11 +55,13 @@ TCallableUtilityRudesheimTest >> testValue3 [
 		value:	3.
 
 	self
-		assert:	
-		self
-			basicTarget
-			lastArguments
-		equals:	{1 .  2 .  3}.
+		assert:	self basicTarget lastArguments
+		equals:
+		{
+			1.
+			2.
+			3
+		}.
 ]
 
 { #category : 'tests' }
@@ -75,9 +73,12 @@ TCallableUtilityRudesheimTest >> testValue4 [
 		value:	4.
 
 	self
-		assert:	
-		self
-			basicTarget
-			lastArguments
-		equals:	{1 .  2 .  3 .  4}.
+		assert:	self basicTarget lastArguments
+		equals:
+		{
+			1.
+			2.
+			3.
+			4
+		}.
 ]

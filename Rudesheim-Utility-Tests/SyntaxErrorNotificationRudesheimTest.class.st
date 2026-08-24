@@ -13,10 +13,7 @@ SyntaxErrorNotificationRudesheimTest class >> targetClass [
 { #category : 'tests' }
 SyntaxErrorNotificationRudesheimTest >> testNamespace [
 	self
-		assert:	
-		Rudesheim
-			Utility
-			SyntaxErrorNotification
+		assert:	Rudesheim Utility SyntaxErrorNotification
 		equals:	self targetClass.
 ]
 
@@ -27,14 +24,14 @@ SyntaxErrorNotificationRudesheimTest >> testSignalCarriesLegacySyntaxErrorFields
 	|
 
 	statement :=
-		[
-			self targetClass
-				inClass:	self class
-				withCode:	''
-				doitFlag:	false
-				errorMessage:	'Message pattern expected'
-				location:	1.
-		].
+	[
+		self targetClass
+			inClass:	self class
+			withCode:	''
+			doitFlag:	false
+			errorMessage:	'Message pattern expected'
+			location:	1.
+	].
 
 	self
 		should:	statement
