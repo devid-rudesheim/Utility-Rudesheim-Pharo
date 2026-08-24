@@ -7,37 +7,32 @@ Class {
 
 { #category : 'accessing' }
 ExtentUtilityRudesheimTest class >> targetClass [
-
-	^ Rudesheim Utility Extent
+	^ Rudesheim Utility Extent.
 ]
 
 { #category : 'accessing' }
 ExtentUtilityRudesheimTest >> defaultBasicTarget [
-
 	^ self targetClass
 		width:	4
-		height:	3
+		height:	3.
 ]
 
 { #category : 'tests' }
 ExtentUtilityRudesheimTest >> testColumnsAliasesWidth [
-
 	self
 		assert:	self basicTarget columns
-		equals:	self basicTarget width
+		equals:	self basicTarget width.
 ]
 
 { #category : 'tests' }
 ExtentUtilityRudesheimTest >> testRowsAliasesHeight [
-
 	self
 		assert:	self basicTarget rows
-		equals:	self basicTarget height
+		equals:	self basicTarget height.
 ]
 
 { #category : 'tests' }
 ExtentUtilityRudesheimTest >> testWidthHeightRoundTrip [
-
 	|
 		extent
 	|
@@ -53,5 +48,5 @@ ExtentUtilityRudesheimTest >> testWidthHeightRoundTrip [
 
 	self
 		assert:	extent height
-		equals:	3
+		equals:	3.
 ]

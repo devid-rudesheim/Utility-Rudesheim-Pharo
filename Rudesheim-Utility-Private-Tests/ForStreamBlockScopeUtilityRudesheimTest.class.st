@@ -14,23 +14,19 @@ Class {
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheimTest class >> targetClass [
-
-	^ Rudesheim Utility BlockScope ForStream
+	^ Rudesheim Utility BlockScope ForStream.
 ]
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheimTest >> defaultBasicTarget [
-
 	^ self targetClass
 		on:	self sourceStream.
 ]
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheimTest >> defaultSourceStream [
-	
 	^ MockObject new
-		on:	#close
-		yourself.
+		on:	#close yourself.
 ]
 
 { #category : 'tests' }
@@ -38,9 +34,9 @@ ForStreamBlockScopeUtilityRudesheimTest >> runDo0 [
 	|
 		times
 	|
-	
+
 	times := 0.
-	
+
 	self
 		should:
 		[
@@ -48,38 +44,36 @@ ForStreamBlockScopeUtilityRudesheimTest >> runDo0 [
 				do:
 				[ :stream |
 					times := 1.
-					
+
 					self
 						assert:	self sourceStream
 						equals:	stream.
 
 					1 / 0.
 				].
-				
-				self fail.
+
+			self fail.
 		]
 		raise:	ZeroDivide.
-	
+
 	self
 		assert:	1
 		equals:	times.
-	
+
 	self
 		verify:	self sourceStream.
 ]
 
 { #category : 'running' }
 ForStreamBlockScopeUtilityRudesheimTest >> setUp [
-
 	super setUp.
-	
+
 	self
 		sourceStream:	nil.
 ]
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheimTest >> sourceStream [
-
 	^ sourceStream
 		ifNil:
 		[
@@ -89,13 +83,11 @@ ForStreamBlockScopeUtilityRudesheimTest >> sourceStream [
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheimTest >> sourceStream: aStream [
-
-	sourceStream := aStream
+	sourceStream := aStream.
 ]
 
 { #category : 'tests' }
 ForStreamBlockScopeUtilityRudesheimTest >> testDo [
-
 	self
 		testDo0_0;
 		tearDown;
@@ -105,13 +97,11 @@ ForStreamBlockScopeUtilityRudesheimTest >> testDo [
 
 { #category : 'tests' }
 ForStreamBlockScopeUtilityRudesheimTest >> testDo0_0 [
-
 	self runDo0.
 ]
 
 { #category : 'tests' }
 ForStreamBlockScopeUtilityRudesheimTest >> testDo0_1 [
-
 	self
 		basicTarget:	self sourceStream intoRHScope;
 		runDo0.

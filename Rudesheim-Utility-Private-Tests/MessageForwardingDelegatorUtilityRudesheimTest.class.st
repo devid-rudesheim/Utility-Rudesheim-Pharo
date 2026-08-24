@@ -47,7 +47,11 @@ MessageForwardingDelegatorUtilityRudesheimTest >> testDoesNotUnderstandForwardsP
 
 	self
 		assert:	self sourceValue lastMessage arguments
-		equals:	{1 . 2}.
+		equals:
+		{
+			1.
+			2
+		}.
 ]
 
 { #category : 'tests' }

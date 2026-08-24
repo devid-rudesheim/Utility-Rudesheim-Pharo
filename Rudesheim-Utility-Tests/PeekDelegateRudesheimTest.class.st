@@ -24,9 +24,5 @@ PeekDelegateRudesheimTest >> testStringAnswersItself [
 	aString := 'text'.
 
 	self
-		assert:
-		(
-			aString peekDelegateRudesheim
-				== aString
-		).
+		assert:	aString peekDelegateRudesheim == aString.
 ]

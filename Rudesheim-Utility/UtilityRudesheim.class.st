@@ -8,7 +8,6 @@ Class {
 
 { #category : 'namespace' }
 UtilityRudesheim class >> BlockScope [
-
 	^ BlockScopeUtilityRudesheim.
 ]
 

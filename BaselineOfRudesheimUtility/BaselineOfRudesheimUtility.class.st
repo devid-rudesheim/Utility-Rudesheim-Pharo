@@ -17,43 +17,44 @@ BaselineOfRudesheimUtility >> baseline: spec [
 				baseline:	'RudesheimKernel'
 				with:
 				[
-					spec repository: 'github://devid-rudesheim/Kernel-Rudesheim-Pharo:develop'
+					spec
+						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:develop'.
 				];
 				package:	'Rudesheim-Utility-Base'
 				with:
 				[
 					spec
-						requires:	#('RudesheimKernel').
+						requires:	#( 'RudesheimKernel' ).
 				];
 				package:	'Rudesheim-Utility-Private'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Utility-Base' 'RudesheimKernel').
+						requires:	#( 'Rudesheim-Utility-Base' 'RudesheimKernel' ).
 				];
 				package:	'Rudesheim-Utility'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Utility-Base' 'Rudesheim-Utility-Private').
+						requires:	#( 'Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' ).
 				];
 				package:	'Rudesheim-Utility-Private-Tests'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Utility' 'Rudesheim-Utility-Tests').
+						requires:	#( 'Rudesheim-Utility' 'Rudesheim-Utility-Tests' ).
 				];
 				package:	'Rudesheim-Utility-Tests'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Utility').
+						requires:	#( 'Rudesheim-Utility' ).
 				];
 				group:	#core
-				with:	#('Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' 'Rudesheim-Utility');
+				with:	#( 'Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' 'Rudesheim-Utility' );
 				group:	#tests
-				with:	#('Rudesheim-Utility-Tests' 'Rudesheim-Utility-Private-Tests');
+				with:	#( 'Rudesheim-Utility-Tests' 'Rudesheim-Utility-Private-Tests' );
 				group:	#default
-				with:	#(#core).
+				with:	#( #core ).
 		].
 ]
