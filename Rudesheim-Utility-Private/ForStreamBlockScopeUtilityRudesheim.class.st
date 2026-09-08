@@ -12,15 +12,13 @@ Class {
 }
 
 { #category : 'instance creation' }
-ForStreamBlockScopeUtilityRudesheim class >> on:	aStream [
-	
+ForStreamBlockScopeUtilityRudesheim class >> on: aStream [
 	^ super new
 		setStream:	aStream.
 ]
 
 { #category : 'enumerating' }
 ForStreamBlockScopeUtilityRudesheim >> do: aBlock [
-
 	^
 	[
 		aBlock
@@ -34,12 +32,10 @@ ForStreamBlockScopeUtilityRudesheim >> do: aBlock [
 
 { #category : 'initialization' }
 ForStreamBlockScopeUtilityRudesheim >> setStream: aStream [
-
 	stream := aStream.
 ]
 
 { #category : 'accessing' }
 ForStreamBlockScopeUtilityRudesheim >> stream [
-
-	^ stream
+	^ stream.
 ]

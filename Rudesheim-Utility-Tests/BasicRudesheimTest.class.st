@@ -36,9 +36,7 @@ BasicRudesheimTest >> basicTarget: anObject [
 
 { #category : 'accessing' }
 BasicRudesheimTest >> defaultBasicTarget [
-	^ self
-		targetClass
-		new.
+	^ self targetClass new.
 ]
 
 { #category : 'accessing' }
@@ -89,9 +87,7 @@ BasicRudesheimTest >> sourceValue: anObject [
 
 { #category : 'accessing' }
 BasicRudesheimTest >> targetClass [
-	^ self
-		class
-		targetClass.
+	^ self class targetClass.
 ]
 
 { #category : 'tests' }
@@ -102,9 +98,6 @@ BasicRudesheimTest >> testBasicInstanceCreation [
 { #category : 'tests' }
 BasicRudesheimTest >> testBasicInstanceCreation0 [
 	self
-		assert:	
-		self
-			basicTarget
-			class
+		assert:	self basicTarget class
 		equals:	self targetClass.
 ]
