@@ -8,7 +8,7 @@ Class {
 
 { #category : 'accessing' }
 MessageForwardingDelegatorUtilityRudesheimTest class >> targetClass [
-	^ MessageForwardingDelegatorUtilityRudesheim.
+	^ Rudesheim Utility Delegator ForProcessingMessage.
 ]
 
 { #category : 'accessing' }
@@ -47,7 +47,11 @@ MessageForwardingDelegatorUtilityRudesheimTest >> testDoesNotUnderstandForwardsP
 
 	self
 		assert:	self sourceValue lastMessage arguments
-		equals:	{1 . 2}.
+		equals:
+		{
+			1.
+			2
+		}.
 ]
 
 { #category : 'tests' }
