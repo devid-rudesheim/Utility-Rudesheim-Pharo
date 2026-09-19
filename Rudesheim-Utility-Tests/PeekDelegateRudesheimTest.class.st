@@ -3,10 +3,15 @@ A PeekDelegateRudesheimTest verifies Object>>peekDelegateRudesheim's default (no
 "
 Class {
 	#name : 'PeekDelegateRudesheimTest',
-	#superclass : 'TestCase',
+	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-Utility-Tests',
 	#package : 'Rudesheim-Utility-Tests'
 }
+
+{ #category : 'accessing' }
+PeekDelegateRudesheimTest class >> targetClass [
+	^ Object.
+]
 
 { #category : 'tests' }
 PeekDelegateRudesheimTest >> testIntegerAnswersItself [
