@@ -44,11 +44,18 @@ BaselineOfRudesheimUtility >> baseline: spec [
 					spec
 						requires:	#( 'Rudesheim-Utility' 'Rudesheim-Utility-Tests' ).
 				];
+				project:	'RudesheimKernelTests'
+				copyFrom:	'RudesheimKernel'
+				with:
+				[
+					spec
+						loads:	#( 'tests' ).
+				];
 				package:	'Rudesheim-Utility-Tests'
 				with:
 				[
 					spec
-						requires:	#( 'Rudesheim-Utility' ).
+						requires:	#( 'Rudesheim-Utility' 'RudesheimKernelTests' ).
 				];
 				group:	#core
 				with:	#( 'Rudesheim-Utility-Base' 'Rudesheim-Utility-Private' 'Rudesheim-Utility' );
