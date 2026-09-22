@@ -18,34 +18,62 @@ DegreeAngleNormalizerUtilityRudesheimTest class >> targetClass [
 { #category : 'tests' }
 DegreeAngleNormalizerUtilityRudesheimTest >> testDenormalizeAngleIsScaleByFullTurn [
 	self
-		assert:	( self targetClass denormalizeAngle: 0.0 )
+		assert:
+		(
+			self targetClass
+				denormalizeAngle:	0.0
+		)
 		closeTo:	0.
 
 	self
-		assert:	( self targetClass denormalizeAngle: 0.25 )
+		assert:
+		(
+			self targetClass
+				denormalizeAngle:	0.25
+		)
 		closeTo:	90.
 
 	self
-		assert:	( self targetClass denormalizeAngle: -0.25 )
+		assert:
+		(
+			self targetClass
+				denormalizeAngle:	-0.25
+		)
 		closeTo:	-90.
 ]
 
 { #category : 'tests' }
 DegreeAngleNormalizerUtilityRudesheimTest >> testNormalizeAngleCardinalValues [
 	self
-		assert:	( self targetClass normalizeAngle: 0 )
+		assert:
+		(
+			self targetClass
+				normalizeAngle:	0
+		)
 		closeTo:	0.0.
 
 	self
-		assert:	( self targetClass normalizeAngle: 90 )
+		assert:
+		(
+			self targetClass
+				normalizeAngle:	90
+		)
 		closeTo:	0.25.
 
 	self
-		assert:	( self targetClass normalizeAngle: 180 )
+		assert:
+		(
+			self targetClass
+				normalizeAngle:	180
+		)
 		closeTo:	0.5.
 
 	self
-		assert:	( self targetClass normalizeAngle: 270 )
+		assert:
+		(
+			self targetClass
+				normalizeAngle:	270
+		)
 		closeTo:	-0.25.
 ]
 

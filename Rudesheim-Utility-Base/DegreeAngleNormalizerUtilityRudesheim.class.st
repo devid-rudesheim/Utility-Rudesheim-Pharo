@@ -27,7 +27,7 @@ DegreeAngleNormalizerUtilityRudesheim class >> normalizeAngle: aDegreeNumber [
 	aDegreeNumber > 180
 		ifTrue:
 		[
-			^ ( aDegreeNumber - 360 ) / 360.
+			^ ( ( aDegreeNumber - 360 ) ) / 360.
 		].
 
 	^ aDegreeNumber / 360.

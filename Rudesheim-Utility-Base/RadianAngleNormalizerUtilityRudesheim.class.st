@@ -22,7 +22,7 @@ RadianAngleNormalizerUtilityRudesheim class >> normalizeAngle: aRadianNumber [
 	aRadianNumber > Float pi
 		ifTrue:
 		[
-			^ ( aRadianNumber - ( 2 * Float pi ) ) / ( 2 * Float pi ).
+			^ ( ( aRadianNumber - ( 2 * Float pi ) ) ) / ( 2 * Float pi ).
 		].
 
 	^ aRadianNumber / ( 2 * Float pi ).

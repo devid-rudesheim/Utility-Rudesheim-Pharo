@@ -19,11 +19,6 @@ height: aHeightInteger [
 ]
 
 { #category : 'accessing' }
-ExtentUtilityRudesheim >> width [
-	^ width.
-]
-
-{ #category : 'accessing' }
 ExtentUtilityRudesheim >> columns [
 	^ self width.
 ]
@@ -43,4 +38,9 @@ ExtentUtilityRudesheim >> setWidth: aWidthInteger
 height: aHeightInteger [
 	width := aWidthInteger.
 	height := aHeightInteger.
+]
+
+{ #category : 'accessing' }
+ExtentUtilityRudesheim >> width [
+	^ width.
 ]
