@@ -44,6 +44,20 @@ RadianAngleNormalizerUtilityRudesheimTest >> testDenormalizeAngleIsScaleByFullTu
 ]
 
 { #category : 'tests' }
+RadianAngleNormalizerUtilityRudesheimTest >> testFullTurnIsTwoPiRadians [
+	self
+		assert:	self targetClass fullTurn
+		closeTo:	2 * Float pi.
+]
+
+{ #category : 'tests' }
+RadianAngleNormalizerUtilityRudesheimTest >> testHalfTurnIsDerivedFromFullTurn [
+	self
+		assert:	self targetClass halfTurn
+		closeTo:	self targetClass fullTurn / 2.
+]
+
+{ #category : 'tests' }
 RadianAngleNormalizerUtilityRudesheimTest >> testNormalizeAngleCardinalValues [
 	self
 		assert:

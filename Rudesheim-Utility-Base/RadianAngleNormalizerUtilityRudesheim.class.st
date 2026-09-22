@@ -3,27 +3,19 @@ A RadianAngleNormalizerUtilityRudesheim converts between raw radians and Rudeshe
 angle form, reached as `Rudesheim Utility Normalizer Angle Radian`. See
 DegreeAngleNormalizerUtilityRudesheim's comment for the normalized form itself and the wrap
 convention -- this is the same conversion, scaled by a full turn of `2 * Float pi` radians instead
-of 360 degrees (so the wrap threshold is `Float pi`, not 180).
+of 360 degrees (so #halfTurn, derived from #fullTurn by TAngleNormalizerUtilityRudesheim, is
+`Float pi`, not 180).
 "
 Class {
 	#name : 'RadianAngleNormalizerUtilityRudesheim',
 	#superclass : 'Object',
+	#traits : 'TAngleNormalizerUtilityRudesheim',
+	#classTraits : 'TAngleNormalizerUtilityRudesheim classTrait',
 	#category : 'Rudesheim-Utility-Base',
 	#package : 'Rudesheim-Utility-Base'
 }
 
-{ #category : 'converting' }
-RadianAngleNormalizerUtilityRudesheim class >> denormalizeAngle: aNormalizedNumber [
-	^ aNormalizedNumber * 2 * Float pi.
-]
-
-{ #category : 'converting' }
-RadianAngleNormalizerUtilityRudesheim class >> normalizeAngle: aRadianNumber [
-	aRadianNumber > Float pi
-		ifTrue:
-		[
-			^ ( ( aRadianNumber - ( 2 * Float pi ) ) ) / ( 2 * Float pi ).
-		].
-
-	^ aRadianNumber / ( 2 * Float pi ).
+{ #category : 'accessing' }
+RadianAngleNormalizerUtilityRudesheim class >> fullTurn [
+	^ 2 * Float pi.
 ]

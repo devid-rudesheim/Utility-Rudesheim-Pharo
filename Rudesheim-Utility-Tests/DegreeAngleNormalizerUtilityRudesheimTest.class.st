@@ -43,6 +43,20 @@ DegreeAngleNormalizerUtilityRudesheimTest >> testDenormalizeAngleIsScaleByFullTu
 ]
 
 { #category : 'tests' }
+DegreeAngleNormalizerUtilityRudesheimTest >> testFullTurnIs360Degrees [
+	self
+		assert:	self targetClass fullTurn
+		equals:	360.
+]
+
+{ #category : 'tests' }
+DegreeAngleNormalizerUtilityRudesheimTest >> testHalfTurnIsDerivedFromFullTurn [
+	self
+		assert:	self targetClass halfTurn
+		equals:	self targetClass fullTurn / 2.
+]
+
+{ #category : 'tests' }
 DegreeAngleNormalizerUtilityRudesheimTest >> testNormalizeAngleCardinalValues [
 	self
 		assert:
