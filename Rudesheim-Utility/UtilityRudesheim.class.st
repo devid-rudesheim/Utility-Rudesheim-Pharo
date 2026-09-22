@@ -22,6 +22,11 @@ UtilityRudesheim class >> Extent [
 ]
 
 { #category : 'namespace' }
+UtilityRudesheim class >> Normalizer [
+	^ NormalizerUtilityRudesheim.
+]
+
+{ #category : 'namespace' }
 UtilityRudesheim class >> SyntaxErrorNotification [
 	^ SyntaxErrorNotificationRudesheim.
 ]
